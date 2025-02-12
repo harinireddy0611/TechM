@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        .header {
+            background: #333;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .header nav a:hover {
+            color: #f4b400;
+        }
+        
+        .hero {
+            background: url('https://png.pngtree.com/thumb_back/fh260/background/20201009/pngtree-dark-green-cyan-paper-cut-minimalist-background-for-brochure-poster-banner-image_405384.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background: #f4b400;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero button:hover {
+            background: #ff9800;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 20px;
+            background: white;
+        }
+
+        .feature-box {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-box h3 {
+            margin-bottom: 10px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+            background: #eee;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px 20px;
+            text-align: center;
+            background: white;
+        }
+
+        .contact input, .contact textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            background: #333;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact button:hover {
+            background: #555;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <header class="header">
+        <h2>My Landing Page</h2>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    
+    <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>We build innovative solutions for a better future.</p>
+        <button>Get Started</button>
+    </section>
+
+    
+    <section id="features" class="features">
+        <div class="feature-box">
+            <h3>🚀 Fast & Secure</h3>
+            <p>Our platform ensures high speed and security for users.</p>
+        </div>
+        <div class="feature-box">
+            <h3>📱 Responsive Design</h3>
+            <p>Looks great on any device, whether mobile or desktop.</p>
+        </div>
+        <div class="feature-box">
+            <h3>🌍 Global Reach</h3>
+            <p>Our services are accessible from anywhere in the world.</p>
+        </div>
+    </section>
+
+   
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a team of passionate developers and designers, dedicated to creating high-quality digital experiences. Our mission is to make technology accessible and user-friendly for everyone.</p>
+    </section>
+
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea placeholder="Your Message" rows="5" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 My Landing Page | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
